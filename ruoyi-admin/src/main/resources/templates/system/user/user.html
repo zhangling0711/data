@@ -116,38 +116,45 @@
 		            checkbox: true
 		        },
 		        {
-		            field: 'userId',
-		            title: '用户ID'
-		        },
-		        {
-		            field: 'loginName',
-		            title: '登录名称',
-		            sortable: true
-		        },
-		        {
-		            field: 'userName',
-		            title: '用户名称'
-		        },
-		        {
-		            field: 'dept.deptName',
-		            title: '部门'
-		        },
-		        {
-		            field: 'email',
-		            title: '邮箱',
-		            visible: false
-		        },
-		        {
-		            field: 'phonenumber',
-		            title: '手机'
-		        },
-				{
-					field: 'phoneimei',
-					title: '手机IMEI'
+					field: 'userId',
+					title: '用户ID',
+					sortable: true
 				},
-		        {
-		            field: 'status',
-		            title: '状态',
+					{
+						field: 'loginName',
+						title: '登录名称',
+						sortable: true
+					},
+					{
+						field: 'password',
+						title: '登录密码',
+						sortable: true
+					},
+					{
+						field: 'userName',
+						title: '用户名称'
+					},
+					{
+						field: 'dept.deptName',
+						title: '部门'
+					},
+					{
+						field: 'email',
+						title: '邮箱',
+						visible: false
+					},
+					{
+						field: 'phonenumber',
+						title: '手机'
+					},
+					{
+						field: 'phoneimei',
+						title: '手机IMEI'
+					},
+					{
+						field: 'status',
+						title: '状态',
+						sortable: true,
 		            align: 'center',
 		            formatter: function(value, row, index) {
 		            	return $.table.selectDictLabel(datas, value);

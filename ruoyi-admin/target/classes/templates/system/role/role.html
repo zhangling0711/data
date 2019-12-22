@@ -82,7 +82,8 @@
 		        },
 		        {
 		            field: 'roleId',
-		            title: '角色编号'
+		            title: '角色编号',
+					sortable: true
 		        },
 		        {
 		            field: 'roleName',
@@ -102,6 +103,7 @@
 		        {
 		            field: 'status',
 		            title: '状态',
+					sortable: true,
 		            align: 'center',
 		            formatter: function(value, row, index) {
 		            	return $.table.selectDictLabel(datas, value);

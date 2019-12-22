@@ -65,10 +65,10 @@
                 #password: sx123456Aa
             # 思信数据源 - 物联网系统
             sxinfom:
-                #enabled: true
-                #url: jdbc:mysql://110.53.162.160:3306/shuofang?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
-                #username: root
-                password: sx123456Aa
+#                #enabled: true
+#                #url: jdbc:mysql://110.53.162.160:3306/shuofang?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+#                #username: root
+#                password: sx123456Aa
             # 思信数据源 - 山洪预警 - rivervis
             sxrivervis:
                 #enabled: true

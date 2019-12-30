@@ -55,6 +55,9 @@
 								<input type="text" class="time-input" id="endTime" placeholder="结束时间" name="params[endTime]"/>
 							</li>
 							<li>
+								邮箱号码：<input type="text" name="email"/>
+							</li>
+							<li>
 								<a class="btn btn-primary btn-rounded btn-sm" onclick="$.table.search()"><i class="fa fa-search"></i>&nbsp;搜索</a>
 							    <a class="btn btn-warning btn-rounded btn-sm" onclick="$.form.reset()"><i class="fa fa-refresh"></i>&nbsp;重置</a>
 							</li>
@@ -118,6 +121,7 @@
 		        {
 		            field: 'userId',
 		            title: '用户ID'
+
 		        },
 		        {
 		            field: 'loginName',
@@ -134,12 +138,14 @@
 		        },
 		        {
 		            field: 'email',
-		            title: '邮箱',
-		            visible: false
+		            title: '邮箱'
 		        },
 		        {
 		            field: 'phonenumber',
-		            title: '手机'
+		            title: '手机',
+                    sortable: true
+
+
 		        },
 				{
 					field: 'phoneimei',

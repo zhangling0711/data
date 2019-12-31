@@ -268,7 +268,11 @@
 			exportExcel: function(formId) {
 				$.modal.confirm("确定导出所有" + $.table._option.modalName + "吗？", function() {
 					var currentId = $.common.isEmpty(formId) ? $('form').attr('id') : formId;
+
+					console.log("currentId= "+currentId);
+					console.log("URL= "+$.table._option.exportUrl);
 					$.modal.loading("正在导出数据，请稍后...");
+					$.modal.loading($("#" + currentId).serializeArray());
 					$.post($.table._option.exportUrl, $("#" + currentId).serializeArray(), function(result) {
 						if (result.code == web_status.SUCCESS) {
 							window.location.href = ctx + "common/download?fileName=" + encodeURI(result.msg) + "&delete=" + true;

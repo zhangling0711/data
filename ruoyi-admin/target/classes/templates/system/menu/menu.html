@@ -34,6 +34,9 @@
 					<a class="btn btn-primary" onclick="$.operate.edit()" shiro:hasPermission="system:menu:edit">
 						<i class="fa fa-edit"></i> 修改
 					</a>
+					<a class="btn btn-warning" onclick="$.table.exportExcel()" shiro:hasPermission="system:menu:export">
+						<i class="fa fa-download"></i> 导出
+					</a>
 					<a class="btn btn-info" id="expandAllBtn">
 						<i class="fa fa-exchange"></i> 展开/折叠
 					</a>
@@ -63,6 +66,7 @@
 					createUrl: prefix + "/add/{id}",
 					updateUrl: prefix + "/edit/{id}",
 					removeUrl: prefix + "/remove/{id}",
+                    exportUrl: prefix + "/export",
 					modalName: "菜单",
 					columns: [{
 						field: 'selectItem',
